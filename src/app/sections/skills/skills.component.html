@@ -1,0 +1,16 @@
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <div class="container">
+    <div appRevealOnScroll>
+      <app-section-title id="skills-title" [title]="content().sectionTitles.skills"></app-section-title>
+    </div>
+
+    <div class="skills-grid">
+      @for (group of content().skills; track group.category) {
+        <article class="surface skill-group" appRevealOnScroll>
+          <h3>{{ group.category }}</h3>
+          <app-chip-list [items]="group.items"></app-chip-list>
+        </article>
+      }
+    </div>
+  </div>
+</section>

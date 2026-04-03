@@ -1,0 +1,20 @@
+<section id="hero" class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true">
+    @if (showCanvas()) {
+      <canvas #heroCanvas class="hero-canvas"></canvas>
+    }
+    <div class="hero-gradient"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="hero-badge" [innerHTML]="content().hero.badge | richText"></p>
+    <h1 id="hero-title" [innerHTML]="content().hero.title | richText"></h1>
+    <p class="hero-subtitle" [innerHTML]="content().hero.subtitle | richText"></p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contact" [innerHTML]="content().hero.ctaContact | richText"></a>
+      <a class="btn btn-ghost" href="#projects" [innerHTML]="content().hero.ctaProjects | richText"></a>
+      <a class="btn btn-ghost" [href]="cvPath" target="_blank" rel="noopener noreferrer" [innerHTML]="content().hero.ctaCv | richText"></a>
+    </div>
+  </div>
+</section>

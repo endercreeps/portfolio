@@ -1,0 +1,49 @@
+<header class="site-header" role="banner">
+  <div class="header-inner container">
+    <button class="brand" type="button" (click)="scrollToSection('hero')" aria-label="Home section">
+      <img src="/logo.png" alt="Portfolio" class="brand-logo" />
+    </button>
+
+    <nav class="nav" aria-label="Primary">
+      @for (link of content().nav; track link.id) {
+        <button type="button" class="nav-link" (click)="scrollToSection(link.id)" [innerHTML]="link.label | richText"></button>
+      }
+    </nav>
+
+    <div class="controls">
+      <div class="language-switch" [attr.aria-label]="content().languageLabel">
+        <button
+          type="button"
+          [class.is-active]="language() === 'fr'"
+          (click)="switchLanguage('fr')"
+          aria-label="Switch to French"
+        >
+          FR
+        </button>
+        <button
+          type="button"
+          [class.is-active]="language() === 'en'"
+          (click)="switchLanguage('en')"
+          aria-label="Switch to English"
+        >
+          EN
+        </button>
+      </div>
+
+      <button
+        type="button"
+        class="theme-toggle"
+        [class.is-dark]="currentTheme() === 'dark'"
+        (click)="toggleTheme()"
+        [attr.aria-label]="content().themeLabel"
+        [attr.aria-pressed]="currentTheme() === 'dark'"
+      >
+        <span class="theme-glyph" aria-hidden="true">☀</span>
+        <span class="theme-switch-track" aria-hidden="true">
+          <span class="theme-switch-thumb"></span>
+        </span>
+        <span class="theme-glyph" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </div>
+</header>

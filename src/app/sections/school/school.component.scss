@@ -1,0 +1,37 @@
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-item {
+  display: grid;
+  gap: 0.8rem;
+
+  header {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--text-secondary);
+  }
+
+  span {
+    font-size: 0.84rem;
+    color: var(--text-tertiary);
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+    color: var(--text-secondary);
+    display: grid;
+    gap: 0.35rem;
+  }
+}

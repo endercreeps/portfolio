@@ -1,0 +1,16 @@
+.about-surface {
+  h3 {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+  }
+
+  p {
+    margin: 0;
+    color: var(--text-secondary);
+  }
+
+  p + p {
+    margin-top: 0.9rem;
+  }
+}

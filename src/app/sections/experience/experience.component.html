@@ -1,0 +1,25 @@
+<section id="experience" class="section" aria-labelledby="experience-title">
+  <div class="container">
+    <div appRevealOnScroll>
+      <app-section-title id="experience-title" [title]="content().sectionTitles.experience"></app-section-title>
+    </div>
+
+    <div class="timeline">
+      @for (experience of content().experiences; track experience.role + experience.period) {
+        <article class="surface timeline-item" appRevealOnScroll>
+          <header>
+            <h3 [innerHTML]="experience.role | richText"></h3>
+            <p [innerHTML]="experience.company | richText"></p>
+            <span [innerHTML]="experience.period | richText"></span>
+          </header>
+
+          <ul>
+            @for (detail of experience.details; track detail) {
+              <li [innerHTML]="detail | richText"></li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+  </div>
+</section>

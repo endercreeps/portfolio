@@ -1,0 +1,5 @@
+<ul class="chip-list">
+  @for (item of items(); track item) {
+    <li class="chip" [innerHTML]="item | richText"></li>
+  }
+</ul>

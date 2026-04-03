@@ -1,0 +1,25 @@
+<section id="projects" class="section" aria-labelledby="projects-title">
+  <div class="container">
+    <div appRevealOnScroll>
+      <app-section-title id="projects-title" [title]="content().sectionTitles.projects"></app-section-title>
+    </div>
+
+    <div class="projects-grid">
+      @for (project of content().projects; track project.title) {
+        <article class="surface project-card" appRevealOnScroll>
+          <h3 [innerHTML]="project.title | richText"></h3>
+          <p [innerHTML]="project.summary | richText"></p>
+          <app-chip-list [items]="project.stack"></app-chip-list>
+          <div class="links">
+            @if (project.links.demo) {
+              <a [href]="project.links.demo" target="_blank" rel="noopener noreferrer">Demo</a>
+            }
+            @if (project.links.repository) {
+              <a [href]="project.links.repository" target="_blank" rel="noopener noreferrer">Repository</a>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

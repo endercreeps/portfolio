@@ -1,0 +1,93 @@
+.contact-surface {
+  h3 {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  p {
+    margin: 0.8rem 0 1.2rem;
+    color: var(--text-secondary);
+  }
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+
+  li {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  span {
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+  }
+
+  a,
+  strong {
+    color: var(--text-primary);
+    font-weight: 500;
+    width: fit-content;
+  }
+
+  .mail-link {
+    border: none;
+    padding: 0;
+    background: transparent;
+    color: var(--text-primary);
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .captcha-box {
+    display: grid;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+
+    label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+  }
+
+  .captcha-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    input {
+      width: 5.2rem;
+      padding: 0.35rem 0.45rem;
+      border: 1px solid var(--border-color);
+      border-radius: 0.45rem;
+      background: var(--surface-primary);
+      color: var(--text-primary);
+    }
+  }
+
+  .captcha-validate {
+    border: 1px solid var(--border-color);
+    background: var(--surface-secondary);
+    color: var(--text-primary);
+    border-radius: 0.45rem;
+    padding: 0.35rem 0.55rem;
+    cursor: pointer;
+  }
+
+  .captcha-error {
+    margin: 0;
+    color: #c2410c;
+    font-size: 0.85rem;
+  }
+}

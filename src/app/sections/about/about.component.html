@@ -1,0 +1,11 @@
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container" appRevealOnScroll>
+    <app-section-title id="about-section-title" [title]="content().sectionTitles.about"></app-section-title>
+    <div class="surface about-surface">
+      <h3 id="about-title" [innerHTML]="content().about.title | richText"></h3>
+      @for (paragraph of content().about.paragraphs; track paragraph) {
+        <p [innerHTML]="paragraph | richText"></p>
+      }
+    </div>
+  </div>
+</section>
