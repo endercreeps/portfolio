@@ -33,7 +33,7 @@ export const CONTENT_EN: PortfolioContent = {
     title: 'Profile',
     paragraphs: [
       "As a student of application development, I specialize in designing interactive applications and modern interfaces.",
-      "I have gained practical experience through the development of applications for connected interactive kiosks, using Angular for web interfaces and C# for various middleware services, as well as through projects in React Native, Java/Kotlin (Android), and Rust.", 
+      "I have gained practical experience through the development of applications for connected interactive kiosks, using Angular for web interfaces and C# for various middleware services, as well as through projects in React Native, Java/Kotlin (Android), and Rust.",
       "I am particularly interested in code quality and creating robust solutions integrated into real-world environments.",
       "I am looking for a work-study program that will allow me to strengthen my web and application development skills within a technical team where I can actively contribute to concrete projects.",
       "Curious, self-motivated, and problem-solving oriented, I bring the ability to adapt quickly, an analytical approach, and a genuine motivation to learn and produce reliable, maintainable solutions."]
@@ -45,7 +45,6 @@ export const CONTENT_EN: PortfolioContent = {
         'Space shooter-style game built using the Godot game engine as part of a university project.\n__Objective:__ 3D menu in space with level selection, 2D game with a physics engine. Implementation of various features relevant to a game.\n__Achievements:__ Different game modes, integration of a 3D HUD into a 2D game, configuration file for settings, scores, and levels',
       stack: ['Godot', 'GdScript', 'Git'],
       links: {
-        repository: '#'
       }
     },
     {

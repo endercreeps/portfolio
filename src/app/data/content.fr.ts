@@ -33,9 +33,9 @@ export const CONTENT_FR: PortfolioContent = {
   title: 'Profil',
   paragraphs: [
     "Étudiant en développement applicatif, je me spécialise dans la conception d'applications interactives et d'interfaces modernes.",
-    "J'ai acquis une expérience concrète à travers le développement d'applications pour bornes interactives connectées, en utilisant notamment Angular pour les interfaces web ainsi que C# pour les différents services d'un *middleware* mais aussi via des projets en React Native, Java/Kotlin (Android) et Rust.", 
+    "J'ai acquis une expérience concrète à travers le développement d'applications pour bornes interactives connectées, en utilisant notamment Angular pour les interfaces web ainsi que C# pour les différents services d'un *middleware* mais aussi via des projets en React Native, Java/Kotlin (Android) et Rust.",
     "Je m'intéresse particulièrement à la qualité du code et à la création de solutions robustes intégrées dans des environnements réels.",
-    "Je recherche une alternance me permettant de renforcer mes compétences en développement web et applicatif au sein d'une équipe technique où je pourrai contribuer activement à des projets concrets.", 
+    "Je recherche une alternance me permettant de renforcer mes compétences en développement web et applicatif au sein d'une équipe technique où je pourrai contribuer activement à des projets concrets.",
     "Curieux, autonome et orienté résolution de problèmes, j'apporte une capacité d'adaptation rapide, une approche analytique et une réelle motivation à apprendre et à produire des solutions fiables et maintenables."
   ]
 },
@@ -45,7 +45,6 @@ export const CONTENT_FR: PortfolioContent = {
       summary: "Jeu type *Space Shooter* avec le moteur de jeu Godot dans le cadre d'un projet universitaire.\n__Objectif :__ Menu 3D dans l'espace avec choix de niveaux, jeu en 2D avec moteur physique. Implémentation de différentes fonctionnalités pertinente pour un jeu.\n__Réalisation :__ Différents mode de jeu, intégration d'un *HUD* 3D dans un jeu en 2D, fichier de configuration pour les paramètres, les scores et les niveaux",
       stack: ['Godot', 'GdScript', 'Git'],
       links: {
-        repository: '#'
       }
     },
     {
@@ -53,7 +52,6 @@ export const CONTENT_FR: PortfolioContent = {
       summary: "Application mobile et interface superviseur web dans le cadre d'un projet universitaire pour une entreprise.\n__Besoin :__ application pour aider les préparateurs à réaliser les commandes de manière efficace et administration sur un pannel web.\n__Réalisation :__ Suivi des préparations en temps réel, visualisation de palette en 3D, algorithme de tri intelligent, reconnaisance vocal.",
       stack: ['Kotlin', 'API REST', 'PostgreSQL', 'Android SDK', 'Django', 'Filament', 'Vosk', 'Tests unitaires', 'Gitlab CI/CD'],
       links: {
-
       }
     }
   ],
