@@ -45,6 +45,7 @@ export interface SchoolItem {
   diplome: string;
   school: string;
   period: string;
+  actual: boolean;
 }
 
 export interface ContactContent {
@@ -69,6 +70,10 @@ export interface SectionTitles {
   contact: string;
 }
 
+export interface Labels {
+  inProgress: string;
+}
+
 export interface FooterContent {
   rights: string;
 }
@@ -79,6 +84,7 @@ export interface PortfolioContent {
   nav: NavLink[];
   hero: HeroContent;
   sectionTitles: SectionTitles;
+  labels: Labels;
   about: AboutContent;
   projects: ProjectItem[];
   skills: SkillGroup[];

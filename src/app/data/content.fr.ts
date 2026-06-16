@@ -29,6 +29,9 @@ export const CONTENT_FR: PortfolioContent = {
     school: "Études",
     contact: 'Contact'
   },
+  labels: {
+    inProgress: 'Diplôme en cours'
+  },
   about: {
   title: 'Profil',
   paragraphs: [
@@ -106,14 +109,22 @@ export const CONTENT_FR: PortfolioContent = {
   ],
   school: [
     {
+      diplome: "[MASTER] Informatique (Parcours ILSEN)",
+      school: "Université d'Avignon, Avignon, Vaucluse (84)",
+      period: '09/2026 - 07/2028',
+      actual: true,
+    },
+    {
       diplome: "[BUT] Informatique (Parcours réalisation et développement d'application)",
       school: 'IUT de Valence, Valence, Drôme (26)',
       period: '09/2023 - 07/2026',
+      actual: false,
     },
     {
       diplome: '[BAC] Général (Mathématiques, Numérique et Science Informatiques, Physique-Chimie) **Mention Bien**',
       school: 'Lycée Édouard Branly, Lyon 05, Rhône (69)',
       period: '09/2021 - 07/2023',
+      actual: false,
     }
   ],
   contact: {

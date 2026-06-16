@@ -6,9 +6,10 @@
 
     <div class="timeline">
       @for (school of content().school; track school.diplome + school.period) {
-        <article class="surface timeline-item" appRevealOnScroll>
+        <article class="surface timeline-item" [class.in-progress]="school.actual" appRevealOnScroll>
           <header>
             <h3 [innerHTML]="school.diplome | richText"></h3>
+            <span class="status-badge" *ngIf="school.actual" [title]="content().labels.inProgress" [attr.aria-label]="content().labels.inProgress">{{ content().labels.inProgress }}</span>
             <p [innerHTML]="school.school | richText"></p>
             <span [innerHTML]="school.period | richText"></span>
           </header>

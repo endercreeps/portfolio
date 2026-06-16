@@ -6,10 +6,12 @@
 .timeline-item {
   display: grid;
   gap: 0.8rem;
+  position: relative; /* required so the badge can be positioned top-right */
 
   header {
     display: grid;
     gap: 0.25rem;
+    padding-right: 3.2rem; /* leave space for the top-right badge */
   }
 
   h3 {
@@ -35,3 +37,58 @@
     gap: 0.35rem;
   }
 }
+
+/* Style when the school item is marked as in progress */
+.timeline-item.in-progress {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.8rem;
+  background: color-mix(in srgb, var(--accent-color) 6%, transparent);
+}
+
+.timeline-item .status-badge {
+  display: inline-block;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  padding: 0.18rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--on-accent, #fff);
+  background: var(--accent-color);
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Responsive: on small screens stack header content and avoid absolute badge overlap */
+@media (max-width: 600px) {
+  .timeline-item {
+    padding-left: 0.6rem; /* reduce left padding for narrow view */
+  }
+
+  /* Use a two-column grid: main content / badge. Keeps title + school + period stacked on the left,
+     badge stays on the right without forcing all elements into a single column. */
+  .timeline-item header {
+    padding-right: 0; /* no extra right padding on small screens */
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.4rem 0.75rem;
+    align-items: start;
+  }
+
+  .timeline-item .status-badge {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    padding: 0.12rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  /* Ensure title and meta stay in the first column */
+  .timeline-item header h3,
+  .timeline-item header p,
+  .timeline-item header span {
+    grid-column: 1;
+  }
+}
+

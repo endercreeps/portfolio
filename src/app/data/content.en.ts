@@ -29,6 +29,9 @@ export const CONTENT_EN: PortfolioContent = {
     school: "Studies",
     contact: 'Contact'
   },
+  labels: {
+    inProgress: "Diploma in progress"
+  },
   about: {
     title: 'Profile',
     paragraphs: [
@@ -106,14 +109,22 @@ export const CONTENT_EN: PortfolioContent = {
   ],
   school: [
     {
+      diplome: "[Master's degree] IT (ILSEN)",
+      school: "Université d'Avignon', Avignon, Vaucluse (84)",
+      period: '09/2026 - 07/2028',
+      actual: true,
+    },
+    {
       diplome: "[Bachelor's degree in science and technology] IT ",
       school: 'IUT de Valence, Valence, Drôme (26)',
       period: '09/2023 - 07/2026',
+      actual: false,
     },
     {
       diplome: '[High school diploma] General (Mathematics, Computer Science, Physics and Chemistry) **Good grade**',
       school: 'Lycée Édouard Branly, Lyon 05, Rhône (69)',
       period: '09/2021 - 07/2023',
+      actual: false,
     }
   ],
   contact: {
