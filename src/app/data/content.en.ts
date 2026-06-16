@@ -110,7 +110,7 @@ export const CONTENT_EN: PortfolioContent = {
   school: [
     {
       diplome: "[Master's degree] IT (ILSEN)",
-      school: "Université d'Avignon', Avignon, Vaucluse (84)",
+      school: "Université d'Avignon, Avignon, Vaucluse (84)",
       period: '09/2026 - 07/2028',
       actual: true,
     },
