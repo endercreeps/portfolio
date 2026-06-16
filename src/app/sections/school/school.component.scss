@@ -6,12 +6,12 @@
 .timeline-item {
   display: grid;
   gap: 0.8rem;
-  position: relative; /* required so the badge can be positioned top-right */
+  position: relative;
 
   header {
     display: grid;
     gap: 0.25rem;
-    padding-right: 3.2rem; /* leave space for the top-right badge */
+    padding-right: 3.2rem;
   }
 
   h3 {
@@ -38,11 +38,10 @@
   }
 }
 
-/* Style when the school item is marked as in progress */
 .timeline-item.in-progress {
-  border-left: 4px solid var(--accent-color);
+  border-left: 4px solid var(--accent);
   padding-left: 0.8rem;
-  background: color-mix(in srgb, var(--accent-color) 6%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
 
 .timeline-item .status-badge {
@@ -53,22 +52,34 @@
   padding: 0.18rem 0.6rem;
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--on-accent, #fff);
-  background: var(--accent-color);
   border-radius: 999px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
 }
 
-/* Responsive: on small screens stack header content and avoid absolute badge overlap */
+/* Light theme badge styling */
+[data-theme='light'] .timeline-item .status-badge {
+  background: var(--accent);
+  color: #1a2332;
+  border: 1.2px solid color-mix(in srgb, var(--accent) 60%, #999);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Dark theme badge styling */
+[data-theme='dark'] .timeline-item .status-badge {
+  background: var(--accent);
+  color: #f5f8fc;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
 @media (max-width: 600px) {
   .timeline-item {
-    padding-left: 0.6rem; /* reduce left padding for narrow view */
+    padding-left: 0.6rem;
   }
 
-  /* Use a two-column grid: main content / badge. Keeps title + school + period stacked on the left,
-     badge stays on the right without forcing all elements into a single column. */
   .timeline-item header {
-    padding-right: 0; /* no extra right padding on small screens */
+    padding-right: 0;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0.4rem 0.75rem;
@@ -84,7 +95,6 @@
     font-size: 0.75rem;
   }
 
-  /* Ensure title and meta stay in the first column */
   .timeline-item header h3,
   .timeline-item header p,
   .timeline-item header span {
