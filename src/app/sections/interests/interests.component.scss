@@ -1,0 +1,39 @@
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.interest-chip {
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: var(--chip-bg, #222);
+  color: var(--chip-color, #fff);
+  font-size: 0.9rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+/* make the chips more visible in light theme */
+:root[data-theme='light'] .interest-chip {
+  --chip-bg: #e6f0ff;
+  --chip-color: #0b2545;
+}
+
+:root[data-theme='dark'] .interest-chip {
+  --chip-bg: #2b394b;
+  --chip-color: #eaf2ff;
+}
+
+@media (max-width: 480px) {
+  .interests-list {
+    gap: 0.4rem;
+  }
+
+  .interest-chip {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.5rem;
+  }
+}
+

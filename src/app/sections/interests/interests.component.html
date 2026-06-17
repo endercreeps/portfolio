@@ -1,0 +1,14 @@
+<section id="interests" class="section" aria-labelledby="interests-title">
+  <div class="container" appRevealOnScroll>
+    <app-section-title id="interests-title" [title]="content().sectionTitles.interests"></app-section-title>
+
+    <div class="surface interests-surface">
+      <div class="interests-list">
+        @for (item of content().interests; track item) {
+          <span class="interest-chip">{{ item }}</span>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+

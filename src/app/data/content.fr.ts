@@ -6,6 +6,7 @@ export const CONTENT_FR: PortfolioContent = {
   nav: [
     { id: 'hero', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
+    { id: 'interests', label: "Centres d'intérêt" },
     { id: 'projects', label: 'Projets' },
     { id: 'skills', label: 'Compétences' },
     { id: 'experience', label: 'Expériences' },
@@ -16,13 +17,14 @@ export const CONTENT_FR: PortfolioContent = {
     badge: 'Corentin PHILYS',
     title: 'Développeur Full Stack orienté développement applicatif',
     subtitle:
-      'Je conçois et implemente des applications web, mobile, *desktop* et native.',
+      'Je conçois et implémente des applications web, mobile, *desktop* et native.',
     ctaContact: 'Me contacter',
     ctaProjects: 'Voir mes projets',
     ctaCv: 'Télécharger mon CV'
   },
   sectionTitles: {
     about: 'À propos',
+    interests: "Centres d'intérêt",
     projects: 'Projets',
     skills: 'Compétences',
     experience: 'Expérience',
@@ -42,17 +44,26 @@ export const CONTENT_FR: PortfolioContent = {
     "Curieux, autonome et orienté résolution de problèmes, j'apporte une capacité d'adaptation rapide, une approche analytique et une réelle motivation à apprendre et à produire des solutions fiables et maintenables."
   ]
 },
+  interests: [
+    'Programmation',
+    'L0AD (Laboratoire ouvert Drôme Ardèche)',
+    "Nuit de l'Info",
+    'Sport (Musculation depuis 4 ans)',
+    'Sport automobile',
+    'Jeu de société',
+    'Culture japonaise'
+  ],
   projects: [
     {
       title: 'Space Shooter',
-      summary: "Jeu type *Space Shooter* avec le moteur de jeu Godot dans le cadre d'un projet universitaire.\n__Objectif :__ Menu 3D dans l'espace avec choix de niveaux, jeu en 2D avec moteur physique. Implémentation de différentes fonctionnalités pertinente pour un jeu.\n__Réalisation :__ Différents mode de jeu, intégration d'un *HUD* 3D dans un jeu en 2D, fichier de configuration pour les paramètres, les scores et les niveaux",
+      summary: "Jeu type *Space Shooter* avec le moteur de jeu Godot dans le cadre d'un projet universitaire.\n__Objectif :__ Menu 3D dans l'espace avec choix de niveaux, jeu en 2D avec moteur physique. Implémentation de différentes fonctionnalités pertinentes pour un jeu.\n__Réalisation :__ Différents modes de jeu, intégration d'un *HUD* 3D dans un jeu en 2D, fichier de configuration pour les paramètres, les scores et les niveaux",
       stack: ['Godot', 'GdScript', 'Git'],
       links: {
       }
     },
     {
       title: 'Aramis',
-      summary: "Application mobile et interface superviseur web dans le cadre d'un projet universitaire pour une entreprise.\n__Besoin :__ application pour aider les préparateurs à réaliser les commandes de manière efficace et administration sur un pannel web.\n__Réalisation :__ Suivi des préparations en temps réel, visualisation de palette en 3D, algorithme de tri intelligent, reconnaisance vocal.",
+      summary: "Application mobile et interface superviseur web dans le cadre d'un projet universitaire pour une entreprise.\n__Besoin :__ application pour aider les préparateurs à réaliser les commandes de manière efficace et administration sur un panel web.\n__Réalisation :__ Suivi des préparations en temps réel, visualisation de palette en 3D, algorithme de tri intelligent, reconnaissance vocal.",
       stack: ['Kotlin', 'API REST', 'PostgreSQL', 'Android SDK', 'Django', 'Filament', 'Vosk', 'Tests unitaires', 'Gitlab CI/CD'],
       links: {
       }
@@ -92,8 +103,9 @@ export const CONTENT_FR: PortfolioContent = {
       details: [
         "Travail d'équipe, formalisation du besoin client",
         "Optimisation d'une application web complexe (Angular)",
-        "Réalisation d'un service pour middleware propriétaire pour l'utilisation d'un lecteur vitale (PAX, Vit@Jour) en C#.",
-        "Outillage : POC console, mise en place serveur Gitea, chaine de compilation et plugins Jenkins"
+        "Réalisation d'un service pour middleware propriétaire pour l'utilisation d'un lecteur Vitale (PAX, Vit@Jour) en C#.",
+        "*Refactoring* d'un service de lecture de carte Vitale via lecteur PC/SC",
+        "Outillage : POC console, mise en place serveur Gitlab/Gitea, chaine de compilation et plugins Jenkins/Gitlab"
       ]
     },
     {
@@ -102,8 +114,8 @@ export const CONTENT_FR: PortfolioContent = {
       period: '03/2025 - 06/2025',
       details: [
         "Travail d'équipe, formalisation du besoin client",
-        "Optimisation d'une application web complexe (Angular)",
-        "Création et optimisations d'aplications web de démonstration (Angular)"
+        "Optimisation d'une application web complexe (Angular) avec correction de bugs, ajout d'amélioration et migration Angular8 à Angular19 ",
+        "Création et optimisations d'applications web de démonstration (Angular)"
       ]
     }
   ],
@@ -138,7 +150,7 @@ export const CONTENT_FR: PortfolioContent = {
     email: '',
     linkedin: 'https://www.linkedin.com/in/philysc',
     github: 'https://github.com/endercreeps',
-    location: 'Lyon, France'
+    location: 'Lyon (69) / Avignon (84), France'
   },
   footer: {
     rights: '© 2026 Corentin PHILYS - Tous droits réservés.'

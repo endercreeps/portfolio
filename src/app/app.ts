@@ -9,6 +9,7 @@ import { ContactComponent } from './sections/contact/contact.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { SeoService } from './core/services/seo.service';
 import { SchoolComponent } from './sections/school/school.component';
+import { InterestsComponent } from './sections/interests/interests.component';
 
 @Component({
   selector: 'app-root',
@@ -21,10 +22,11 @@ import { SchoolComponent } from './sections/school/school.component';
     SkillsComponent,
     ExperienceComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    InterestsComponent,
   ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   private readonly seo = inject(SeoService);

@@ -6,6 +6,7 @@ export const CONTENT_EN: PortfolioContent = {
   nav: [
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'interests', label: 'Interests' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
@@ -23,6 +24,7 @@ export const CONTENT_EN: PortfolioContent = {
   },
   sectionTitles: {
     about: 'About',
+    interests: 'Interests',
     projects: 'Projects',
     skills: 'Skills',
     experience: 'Experience',
@@ -41,6 +43,15 @@ export const CONTENT_EN: PortfolioContent = {
       "I am looking for a work-study program that will allow me to strengthen my web and application development skills within a technical team where I can actively contribute to concrete projects.",
       "Curious, self-motivated, and problem-solving oriented, I bring the ability to adapt quickly, an analytical approach, and a genuine motivation to learn and produce reliable, maintainable solutions."]
   },
+  interests: [
+    'Programming',
+    'L0AD (Laboratoire ouvert Drôme Ardèche)',
+    "Nuit de l'Info",
+    'Sports (Workout for 4 years)',
+    'Motorsports',
+    'Board games',
+    'Japanese culture',
+  ],
   projects: [
     {
       title: 'Space Shooter',
@@ -76,7 +87,7 @@ export const CONTENT_EN: PortfolioContent = {
       items: ['Flutter', 'Kotlin', 'Java', 'Android SDK', 'React Native']
     },
     {
-      category: 'Environements',
+      category: 'Environments',
       items: ['VirtualBox', 'WSL', 'Gitlab CI/CD', 'Docker Compose']
     },
     {
@@ -92,8 +103,9 @@ export const CONTENT_EN: PortfolioContent = {
       details: [
         "Teamwork, formalizing client requirements",
         "Optimizing a complex web application (Angular)",
-        "Development of a service for proprietary middleware to support a vital signs monitor (PAX, Vit@Jour) in C#",
-        "Tools: Console POC, Gitea server setup, build pipeline and Jenkins plugins"
+        "Development of a service for proprietary middleware to support a Vital reader (PAX, Vit@Jour) in C#",
+        "Refactoring of a service that reads Vitale cards using a PC/SC card reader",
+        "Tools: Console POC, Gitlab/Gitea server setup, build pipeline and Jenkins/Gitlab plugins"
       ]
     },
     {
@@ -102,7 +114,7 @@ export const CONTENT_EN: PortfolioContent = {
       period: '03/2025 - 06/2025',
       details: [
         "Teamwork, defining client requirements",
-        "Optimizing a complex web application (Angular)",
+        "Optimizing a complex web application (Angular) with bugs fixes, new features and Angular8 to Angular19 migration",
         "Creating and optimizing demo web applications (Angular)"
       ]
     }
@@ -137,7 +149,7 @@ export const CONTENT_EN: PortfolioContent = {
     email: '',
     linkedin: 'https://www.linkedin.com/in/philysc',
     github: 'https://github.com/endercreeps',
-    location: 'Lyon, France'
+    location: 'Lyon (69) / Avignon (84), France'
   },
   footer: {
     rights: '© 2026 Corentin PHILYS - All rights reserved.'

@@ -68,6 +68,7 @@ export interface SectionTitles {
   experience: string;
   school: string;
   contact: string;
+  interests: string;
 }
 
 export interface Labels {
@@ -86,6 +87,7 @@ export interface PortfolioContent {
   sectionTitles: SectionTitles;
   labels: Labels;
   about: AboutContent;
+  interests: string[];
   projects: ProjectItem[];
   skills: SkillGroup[];
   experiences: ExperienceItem[];
