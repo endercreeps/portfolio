@@ -4,9 +4,9 @@ export const SITE_CONFIG = {
   cvPath: '/cv/cv.pdf',
   seo: {
     fr: {
-      title: 'Portfolio | Developpeur Full Stack',
+      title: 'Portfolio | Développeur  Full Stack',
       description:
-        'Portfolio one-page professionnel orienté developpement applicatif full stack, disponible en francais et anglais.'
+        'Portfolio one-page professionnel orienté développement applicatif full stack, disponible en francais et anglais.'
     },
     en: {
       title: 'Portfolio | Full Stack Developer',

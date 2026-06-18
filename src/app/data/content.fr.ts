@@ -67,6 +67,14 @@ export const CONTENT_FR: PortfolioContent = {
       stack: ['Kotlin', 'API REST', 'PostgreSQL', 'Android SDK', 'Django', 'Filament', 'Vosk', 'Tests unitaires', 'Gitlab CI/CD'],
       links: {
       }
+    },
+    {
+      title: 'Portfolio',
+      summary: "Portfolio personnel pour présenter mes projets et compétences.\n__Objectif :__ Présenter mon profil à travers un site vitrine\n__Réalisation :__ Site web responsive avec Angular, intégration de contenu dynamique, mise en place d'une architecture modulaire et d'un système de navigation fluide.",
+      stack: ['Angular', 'Typescript', 'HTML/SCSS'],
+      links: {
+        repository: "https://github.com/endercreeps/portfolio/"
+      }
     }
   ],
   skills: [
